@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+
+  app:
+
+    build: app/
+    command: python ./main.py
+
+
+
+  users_data:
+
+    build: users_data/
+    command: python ./users_config.py
